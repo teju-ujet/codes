@@ -1,0 +1,11 @@
+var str1="javascript";
+var str2=" concact the value";
+var str3=str1.concat(str2);
+var str4=str1.toUpperCase();
+var str5=str1.toLowerCase();
+var str6=str2.trim();
+var str7=str2.slice(4,5);
+var str8=str2.split(" ");
+console.log(str3+" "+str6+" "+str7);
+console.log(str8);
+console.log(str4+str5);

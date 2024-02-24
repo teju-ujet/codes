@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <script type="text/javascript">
+        function commentform(){
+            var data="Name:<br><input type='text' name='name'><br>comment:<br>:<textarea rows='5 'cols='50'></textarea><br><input type='submit' value='comment'>";
+            document.getElementById('mylocation').innerHTML=data;
+        }
+        </script>
+    <form name="myform">
+        <input type="button"value="comment"onclick="commentform()">
+        <div id="mylocation"></div>
+
+    </form>
+    </body>
+</html>

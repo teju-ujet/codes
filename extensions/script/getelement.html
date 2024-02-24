@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function getcube(){
+            var number=document.getElementById("number").value;
+            alert(number*number*number);
+        }
+        function getelements(){
+            var allgenders=document.getElementsByName("gender");
+            alert("toatalgenders"+allgenders.length);
+        }
+        function counth2(){
+            var totalh2=document.getElementsByTagName("h2")
+            alert("totalh2:"+totalh2.length);
+        }
+        function counth3(){
+            var totalh3=document.getElementsByTagName("h3");
+            alert("toatalh3:"+totalh3.length);
+        }
+        </script>
+        <h2>h2 tags are</h2>
+        <h3>h3 tags are</h3>
+        <h2>h2 tags are</h2>
+        <h3>h3 tags are</h3>
+    </head>
+    <body>
+        <form>
+          Enter no:<input type="text" id="number"name="number"/></form></body><br/>
+          <input type="button"value="cube"onclick="getcube()"/>
+          male:<input type="radio"name="gender"value="male">
+            female:<input type="radio"name="gender"value="female">
+            <input type="button"onclick="getelements()"value="totalgenders">
+           <button onclick="counth2()">counth2</button>
+           <button onclick="counth3()">counth3</button>
+
+        </inpute>
+
+        </form>
+    </body>
+</html>

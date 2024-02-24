@@ -1,0 +1,49 @@
+<html>
+    <head>
+    </head>
+    <body>  
+        weight:<input id="weight"onclick="getbmi()"/>
+        height:<input id="height"onclick="getbmi()"/>
+        <button onclick="getbmi()">calculate bmi</button>
+        <p id="result"></p>
+        <script>
+            function getbmi()
+            {
+                try{
+                let weight=document.getElementById("weight").value;
+                let height=document.getElementById("height").value;
+                console.log(weight,"test weight");
+                console.log(height,"test height");
+                let bmi=(weight/(height*height)*10000);//formula for claculating bmi
+                console.log(bmi)
+                document.getElementById("result").innerHTML=bmi;
+                if(!weight ){//height and weight is null ||!height
+                    console.log("check weight and height");
+                    document.getElementById("result").innerHTML="weight is null";
+                }
+                else if(height==0 ){//!height height is null and height is zero||!height
+                   document.getElementById("result").innerHTML="the height is zero";
+                    
+             }
+                if(isNaN(weight)){//isnotanumber(isnan) if we give char then this msg is displayed
+                    document.getElementById("result").innerHTML="weight should be number";
+
+                }
+                else if(bmi==0){
+                    document.getElementById("result").innerHTML="the ibm value is 0";
+                    
+                }
+            
+                
+            }catch(error){
+                document.getElementById("result").innerHTML="there is a error";
+                
+            }
+        }
+            
+        
+
+            
+         </script>
+    </body>
+    </html>

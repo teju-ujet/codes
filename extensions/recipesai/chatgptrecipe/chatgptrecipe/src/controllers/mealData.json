@@ -1,0 +1,32 @@
+{
+  "day": "monday",
+  "totalCaloriesPerDay": 2000,
+  "dietType": "Vegan",
+  "cuisine": "Indian",
+  "allergies": ["Gluten"],
+  "includedIngredients": ["Tomatoes", "Spinach"],
+  "excludedIngredients": ["Mushrooms"],
+  "meals": [
+    {
+      "meal": "Breakfast",
+      "mealname": "Vegan tofu scramble with sautéed spinach, tomatoes, and spices",
+      "carbs": 30,
+      "protein": 20,
+      "fat": 10
+    },
+    {
+      "meal": "Lunch",
+      "mealname": "Chickpea and spinach curry served with brown rice",
+      "carbs": 40,
+      "protein": 30,
+      "fat": 15
+    },
+    {
+      "meal": "Dinner",
+      "mealname": "Vegetable biryani made with basmati rice, mixed vegetables, and aromatic spices",
+      "carbs": 35,
+      "protein": 25,
+      "fat": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<html>
+    <head>
+            <script type="text/javascript">
+                function validateform()
+                {
+                    var name=document.myform.name.value;
+                    var password=document.myform.password.value;
+                    if(name==null||name==" "){
+                        alert("name cant be blank")
+                        return false;
+                    }else if(password.length<6){
+                        alert("password should be more than 6");
+                        return false;
+                    }
+
+                    }
+
+            </script>
+        <body>
+            <form name="myform"method="post"action="https://mail.google.com/mail/u/0/#inbox"onsubmit="return validateform()">
+                Name:<input type="text"name="name"><br/>
+                password:<input type="password"name="password"><br/>
+                <input type="submit"value="register">
+            </form>
+    </head>
+</html>

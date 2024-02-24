@@ -1,0 +1,41 @@
+<html>
+<head>
+ <script>
+    function validate(){  
+var name=document.f1.name.value;  
+var password=document.f1.password.value;  
+var status=false;  
+  
+if(name.length<1){  
+document.getElementById("nameloc").innerHTML= " <img src='C:/Users/kumari/.vscode/extensions/script/.vscode/imageoferror.gif'/> Please enter your name";  
+status=false;  
+}else{  
+document.getElementById("nameloc").innerHTML=" <img src='C:/Users/kumari/.vscode/extensions/script/.vscode/checked%20image.gif'/>";  
+status=true;  
+}  
+if(password.length<6){  
+document.getElementById("passwordloc").innerHTML= "<img src='C:/Users/kumari/.vscode/extensions/script/.vscode/imageoferror.gif'/> Password must be at least 6 char long";  
+status=false;  
+}else{  
+document.getElementById("passwordloc").innerHTML=" <img src='C:/Users/kumari/.vscode/extensions/script/.vscode/checked%20image.gif'/>";  
+}  
+return status;  
+}  
+    </script> 
+    </head>
+    <body>
+        <h2>JavaScript Validation</h2>
+        <form name="f1" action="#" onsubmit="return validate()"> 
+            <img src="C:/Users/kumari/.vscode/extensions/script/.vscode/imageoferror.gif" width="50"height="50">
+            <img src="C:/Users/kumari/.vscode/extensions/script/.vscode/checked%20image.gif"width="50"height="50">
+            <table>  
+            <tr><td>Enter Name:</td><td><input type="text" name="name"/>  
+            <span id="nameloc"></span></td></tr>  
+            <tr><td>Enter Password:</td><td><input type="password" name="password"/>  
+            <span id="passwordloc"></span></td></tr>  
+            <tr><td colspan="2"><input type="submit" value="register"/></td></tr>  
+            </table>  
+        </form>
+    </body>
+    </head>
+</html>

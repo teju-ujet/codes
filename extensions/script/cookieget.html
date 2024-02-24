@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <h1>cookie</h1>
+    </head>
+  <body>
+    Name: <input type="text" id="name">
+    Email: <input type="text" id="email">
+    Course: <input type="text" id="course">
+    <input type="button" value="setcookie" onclick="setcookie()">
+    <input type="button" value="getcookie" onclick="getcookie()">
+
+    <script type="text/javascript">
+      function setcookie() {
+        document.cookie = "name=" + document.getElementById("name").value + ";";
+        document.cookie += " email=" + document.getElementById("email").value + ";";
+        document.cookie += " course=" + document.getElementById("course").value + ";";
+        alert("Cookie has been set.");
+      }
+
+      function getcookie() {
+        if (document.cookie !== "") {
+          var cookies = document.cookie.split("; ");
+          var name, email, course;
+          var cookieFound = false;
+          for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].split("=");
+            var cookieName = cookie[0].trim();
+            var cookieValue = cookie[1];
+            if (cookieName === "name") {
+              name = cookieValue;
+              cookieFound = true;
+            } else if (cookieName === "email") {
+              email = cookieValue;
+              cookieFound = true;
+            } else if (cookieName === "course") {
+              course = cookieValue;
+              cookieFound = true;
+            }
+          }
+          if (cookieFound) {
+            var message = "Name: " + name + "\nEmail: " + email + "\nCourse: " + course;
+            alert(message);
+          }
+        } else {
+          alert("Cookie is not available.");
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+<!-- <html>
+    <body>
+    Name:<input type="text"id="name">
+    eamil:<input type="text"id="eamil">
+    Course:<input type="text"id="course">
+        <input type="button"value="setcookie"onclick="setcookie()">
+        <input type="button"value="getcookie"onclick="getcookie()">
+        <script type="text/javascript">
+            function setcookie(){
+                document.cookie="name="+document.getElementById("name").value;
+                document.cookie="email="+document.getElementById("email").value;
+                document.cookie="course="+document.getElementById("course").value;
+            }
+            function getcookie()
+            {
+                if(document.cookie!=0)
+                {
+                    alert("name"+document.getElementById("name").value+"email"+document.getElementById("email").value+document.getElementById("course").value);
+
+                }
+                else{
+                    alert("cookie is not available");
+                }
+            }
+
+        </script>
+    </body>
+</html> -->

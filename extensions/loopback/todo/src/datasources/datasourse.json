@@ -1,0 +1,20 @@
+{
+    "readDS": {
+       "host": "localhost",    
+       "database": "connect",
+       "user":"root",
+       "password": "teju2000",
+       "name": "readDS",
+       "connector": "mysql"
+     },
+   
+    "writeDS": {
+       "host": "localhost",
+       "database": "coonect",
+       "user":"root",
+       "password": "teju2000",
+       "name": "writeDS",
+       "connector": "mysql"
+     }
+   }
+

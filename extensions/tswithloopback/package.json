@@ -1,0 +1,11 @@
+{
+  "name": "tswithloopback",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+   "dev":"tsc app.ts && node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

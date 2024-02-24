@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <script>
+            class Employee
+            {
+                constructor(id,name)//constructor 
+                {
+                    this.id=id;
+                    this.name=name;
+                }
+                details()
+                {
+                    document.writeln(this.id+" "+this.name+"<br>");
+                }
+                static abc()//in static method we assign class name directly and we get the value
+                {
+                    return "static method is invoked";
+                }
+            }
+            var e1=new Employee(100,"teju");
+            var e2=new Employee(103,"suchi");
+            e1.details();
+            e2.details();
+            document.writeln(Employee.abc());
+
+        </script>
+    </body>
+</html>

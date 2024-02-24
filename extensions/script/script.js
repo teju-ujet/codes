@@ -1,0 +1,10 @@
+var idName='teju';
+document.write(idName);
+var age=22;
+document.write(age);
+var isApproved=true;
+document.write(isApproved);
+var firstName;
+document.write(firstName);
+var selectedcolor=null;
+document.write(selectedcolor);

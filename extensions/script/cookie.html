@@ -1,0 +1,57 @@
+<html>
+    <body>
+        <select id="color" onchange="display()">
+            <option value="SelectColor">SelectColor</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+        </select>
+        <script type="text/javascript">
+            function display(){
+                var value = document.getElementById("color").value;
+                if(value != "SelectColor")
+                {
+                    document.bgColor = value; // background color bg
+                    document.cookie = "color=" + value;
+                }
+            }
+            window.onload = function(){
+                if(document.cookie.length != 0)
+                {
+                    var array = document.cookie.split("=");
+                    document.getElementById("color").value = array[1];
+                    document.bgColor = array[1];
+                }
+            }
+        </script>
+    </body>
+</html>
+
+<!-- <html>
+    <body>
+        <select id="color" onchange="display()">
+            <option value="SelectColor">SelectColor</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+        </select>
+        <script type="text/javascript">
+            function dispaly(){
+                var value=document.getElementById("color").value;
+                if(value!="SelectColor")
+                {
+                    document.bgColor=value;//backgroundcolor bg
+                    document.cookie="color="+value;
+                }
+            }
+            window.onload=function(){
+                if(document.cookie.length!=0)
+                {
+                    var array=documnet.cookie.split("=");
+                    document.getElementById("color").value=array[1];
+                    documnet.bgColor=array[1];
+                }
+            }
+        </script>
+    </body>
+    </html> -->
